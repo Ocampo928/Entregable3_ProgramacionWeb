@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crear Equipo</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <h1 class="navbar-title">Pokédex App</h1>
+      <nav>
+        <ul class="navbar-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="crear_equipo.html">Crear Equipo</a></li>
+          <li><a href="ver_equipos.html">Ver Equipos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="crear-equipo">
+    <section class="formulario">
+      <h2> Arma tu equipo Pokémon</h2>
+
+      <label for="nombre-equipo">Nombre del equipo:</label>
+      <input type="text" id="nombre-equipo" placeholder="Ej: Elite Six" required />
+
+      <label for="busqueda-pokemon">Buscar Pokémon:</label>
+      <input type="text" id="busqueda-pokemon" placeholder="Ej: Pikachu, Charmander..." />
+
+      <div id="resultados-pokemon" class="grid-container"></div>
+
+      <h3> Pokémon seleccionados (máx. 6):</h3>
+      <div id="preview-equipo" class="seleccionados"></div>
+
+      <button id="guardar-equipo"> Guardar Equipo</button>
+    </section>
+  </main>
+
+  <script src="crear_equipo.js"></script>
+</body>
+</html>
